@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrasiPasienActivity"
+    android:background="@color/green_secondary">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/hello_again"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="389dp"
+        android:layout_height="456dp"
+        android:background="@drawable/bg_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.263">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="389dp"
+            android:layout_height="456dp">
+
+            <EditText
+                android:id="@+id/eT_nama"
+                android:layout_width="352dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/bg_input_data"
+                android:elevation="5dp"
+                android:hint="@string/masukan_nama"
+                android:inputType="textFilter"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.486"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/eT_email"
+                android:layout_width="352dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_input_data"
+                android:elevation="5dp"
+                android:hint="@string/masukan_email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.486"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eT_nama" />
+
+            <EditText
+                android:id="@+id/eT_password"
+                android:layout_width="352dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_input_data"
+                android:elevation="5dp"
+                android:hint="@string/masukan_password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.486"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eT_email" />
+
+            <EditText
+                android:id="@+id/eT_konf"
+                android:layout_width="352dp"
+                android:layout_height="58dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_input_data"
+                android:elevation="5dp"
+                android:hint="@string/masukan_konf"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.432"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eT_password"/>
+
+            <Button
+                android:id="@+id/btn_daftar"
+                android:layout_width="337dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_btn_primary"
+                android:elevation="10dp"
+                android:text="@string/daftar"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eT_konf"
+                app:layout_constraintVertical_bias="0.353" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Sudah punya akun?"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tV_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Login Sekarang"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

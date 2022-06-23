@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HospitalApps</string>
+    <string name="hello_again">Hello Again!</string>
+    <string name="welcome">Welcome Back\nTo\nHospital</string>
+    <string name="masukan_email">Masukan Email</string>
+    <string name="masukan_password">Masukan Password</string>
+    <string name="masukan_nama">Masukan Nama</string>
+    <string name="masukan_konf">Masukan Konfirmasi Password</string>
+    <string name="masuk">Masuk</string>
+    <string name="daftar">Daftar</string>
+</resources>
